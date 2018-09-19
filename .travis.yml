@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: jHKGXkMw4S+qGxLWuj+/lTaFDPVtZVvgMNAryfQUdd2bZscQjWdstpWGNn8wHCYV04sMWEQB+IxHbJwA8rGBFYfIf+UZfkGMdBC0n/onoUvDs0/2Rbyj6bQP9HZ8YyurLeBEixL9doy4NpPIuirtSiYOVZkpY3/Pcea125nUVLZI0YcAQWAzIWMrepZ8U4RkJn4w89U7wOu3ukX+Q1x1LTX50nn8PmmYh+/48QPQNZ2wi/Qc8G3S4cK2PZnUqUy2X2rlQTb7I7ko1sCryvDpaAbatD2XxfJie7ZDGCRyaiJPvsBYkhhD5zffKtoJUkHG8//j7aawR5bhYF3UXbgyWwv+kuQ3XvUTs+e3FiGIZ6qlsZeEC+EZqkrU0KfUr5bZ+k85CFeAQFUPrZV6SL0fZB09kFh+bisYys5Bwvm8yX4i617/OKKOX8+zbhTqrgBbdDNegvTyETBpb5NUYa+7Le2B9bfBVwR/hq8TaxWnncUOTEAWT+LJf/2XOuZGGbiWrjiZBJCHpsw0vJMQc4m5RRscAgmwm7JfCbrVHsK81udGC2jCkVmnig5qSoZa+XrNRqCpHdqA3dEJ3CZXnejeGVXe2CAOIoRAYinGSYNk7xXt0u2NKwE8MBfIpdLpT/CYg5VGrwlZlZx74LD+p1kAZG604/UkGKgYE9XXYcFp8iM=
+  app: evening-bastion-56652
+  on:
+    repo: maryzhenghan/react-trello-testing
